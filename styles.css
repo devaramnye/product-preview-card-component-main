@@ -1,0 +1,72 @@
+/* Variables
+   ========================================================================== */
+
+:root {
+    /* PRIMARY */
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream-color: hsl(30, 38%, 92%);
+    /* NEUTRAL */
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+
+    /* FONT FAMILY */
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-fraunces: "Fraunces", sans-serif;
+}
+
+
+
+
+
+/* BODY, IMG & MAIN
+   ========================================================================== */
+
+/**
+ * 1. Centering the main part of our page vertically & horizontally
+ */
+
+body {
+  display: flex; /* [1] */
+  min-height: 100vh; /* [1] */
+  flex-direction: column;
+  justify-content: center; /* [1] */
+  align-items: center; /* [1] */
+  padding: 1rem;
+  background-color: var(--cream-color);
+  font-family: var(--font-montserrat);
+}
+
+main {
+  background-color: white;
+  max-width: 23rem;
+}
+
+.article {}
+ 
+  .article__h {
+    margin: 1rem 0 0 1.1rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+.fig {}
+
+  .fig__img { width: 100%; }
+
+.content {}
+
+  .content__h {
+    font-style: var(--font-montserrat);
+  }
+
+
+
+
+
+
+/* BCONTENT & ITS BUTTON
+   ========================================================================== */
+
+.content {
+  padding: 0 1.2rem;
+}
