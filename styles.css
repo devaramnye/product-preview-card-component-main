@@ -14,6 +14,10 @@
     --font-fraunces: "Fraunces", sans-serif;
 }
 
+* {
+  margin: 0;
+}
+
 
 
 
@@ -39,13 +43,18 @@ body {
 main {
   background-color: white;
   max-width: 23rem;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .article {}
  
   .article__h {
     margin: 1rem 0 0 1.1rem;
-    font-size: 1rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-family: var(--font-montserrat);
+    color: var(--dark-grayish-blue);
     font-weight: 500;
   }
 
@@ -53,11 +62,41 @@ main {
 
   .fig__img { width: 100%; }
 
-.content {}
+.content { padding: 0 1.2rem; }
 
   .content__h {
-    font-style: var(--font-montserrat);
+    font-family: var(--font-fraunces);
+    margin-top: 0.7rem;
   }
+
+  .content__p {
+    font-family: var(--font-montserrat);
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+  }
+
+  .price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+    .price__one {
+      font-size: 2rem;
+      font-family: var(--font-fraunces);
+      color: var(--dark-cyan);
+    }
+
+    .price__two {
+      font-size: 0.8rem;
+      color: var(--dark-grayish-blue);
+      text-decoration: line-through;
+      font-family: var(--font-montserrat);
+      font-weight: 500;
+    }
 
 
 
@@ -67,6 +106,14 @@ main {
 /* BCONTENT & ITS BUTTON
    ========================================================================== */
 
-.content {
-  padding: 0 1.2rem;
+button {
+  background: var(--dark-cyan);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.7rem 0;
+  border-radius: 10px;
+  border: 0;
+  color: white;
 }
