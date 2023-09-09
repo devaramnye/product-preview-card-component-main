@@ -42,7 +42,7 @@ body {
 
 main {
   background-color: white;
-  max-width: 23rem;
+  max-width: 30rem;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -50,7 +50,7 @@ main {
 .article {}
  
   .article__h {
-    margin: 1rem 0 0 1.1rem;
+    margin: 1.5rem 0 0 1.2rem;
     font-size: 0.875rem;
     text-transform: uppercase;
     font-family: var(--font-montserrat);
@@ -67,6 +67,8 @@ main {
   .content__h {
     font-family: var(--font-fraunces);
     margin-top: 0.7rem;
+    font-weight: 700;
+    font-size: 2rem
   }
 
   .content__p {
@@ -75,6 +77,8 @@ main {
     font-weight: 500;
     font-size: 0.875rem;
     margin-top: 1rem;
+    line-height: 1.4rem;
+    width: 90%;
   }
 
   .price {
@@ -98,15 +102,19 @@ main {
       font-weight: 500;
     }
 
-
-
+    .img {
+      max-inline-size: 100%;
+      block-size: auto;
+      object-fit: cover;
+      height: 100%;
+    }
 
 
 
 /* BCONTENT & ITS BUTTON
    ========================================================================== */
 
-button {
+.button {
   background: var(--dark-cyan);
   width: 100%;
   display: flex;
@@ -116,4 +124,31 @@ button {
   border-radius: 10px;
   border: 0;
   color: white;
+  margin: 1.2rem 0;
+}
+
+.button:hover,
+.button:focus { opacity: 0.7; }
+
+@media only screen and (min-width: 30.1rem) {
+  .article {
+    display: flex;
+  }
+
+  main { max-width: 35rem; }
+
+  .fig { width: 50%; }
+
+  .section { 
+    width: 50%;
+    margin: 0 0.5rem;
+  }
+
+  .content__h { width: 90%; }
+
+  .content__p { width: 100%; }
+
+  .price { margin-top: 1.5rem; }
+
+  .button { margin-top: 1.5rem; }
 }

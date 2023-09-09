@@ -48,36 +48,45 @@
     <article class="article">
 
       <fig class="fig">
-        <img class="fig__img" src="./images/image-product-mobile.jpg" alt="">
+        <picture>
+          <source class="img" media="(max-width:30rem)" srcset="./images/image-product-mobile.jpg">
+          <source class="img" media="(min-width:30.1rem)" srcset="./images/image-product-desktop.jpg">
+          <img class="img" src="./images/image-product-mobile.jpg" alt="">
+        </picture>
       </fig>
 
-      <h1 class="article__h">P e r f u m e</h1>
 
-      <section class="content">
-
-        <h2 class="content__h">Gabrielle Essence Eu De Parfum</h2>
-        
-        <p class="content__p">
-          A floral, solar and voluptuous 
-          interpretation composed by Olivier 
-          Polge, Perfumer-Creator for the House of CHANEL.
-        </p>
-        
-        <div class="price">
-        
-          <p class="price__one">
-            $149.99
-          </p>
-          <p class="price__two">
-            $169.99
-          </p>
-        
+      <section class="section">
+       
+        <div>
+          <h1 class="article__h">P e r f u m e</h1>
         </div>
+        
+        <div class="content"> 
+          <h2 class="content__h">Gabrielle Essence Eau De Parfum</h2>
+          
+          <p class="content__p">
+            A floral, solar and voluptuous 
+            interpretation composed by Olivier 
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          
+          <div class="price">
+          
+            <p class="price__one">
+              $149.99
+            </p>
+            <p class="price__two">
+              $169.99
+            </p>
+          
+          </div>
 
-        <button>
-          <img src="./images/icon-cart.svg" alt="">
-          <p>Add to Cart</p>
-        </button>
+          <button class="button">
+            <img src="./images/icon-cart.svg" alt="">
+            <p>Add to Cart</p>
+          </button>
+        </div>
 
       </section>
 
