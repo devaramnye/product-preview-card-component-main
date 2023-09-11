@@ -53,7 +53,7 @@ I am still learning to figure out the best way of accessibilily but its hard to 
 
 ### Useful resources
 
-- [https://web.dev/learn/design/responsive-images/](https://www.example.com) - This helped me for responsive image.
+- [https://web.dev/learn/design/responsive-images/] - This helped me for responsive image.
 - [https://www.w3schools.com/html/html_images_picture.asp] - This helped me to get a little peak into the picture element.
 
 ## Author
